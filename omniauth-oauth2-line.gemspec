@@ -3,12 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "omniauth-line/version"
 
 Gem::Specification.new do |s|
-  s.name        = "omniauth-line"
+  s.name        = "omniauth-oauth2-line"
   s.version     = OmniAuth::Line::VERSION
-  s.authors     = ["kazasiki"]
-  s.email       = ["kazasiki@gmail.com"]
-  s.homepage    = "https://github.com/kazasiki/omniauth-line"
-  s.description = %q{OmniAuth strategy for Line}
+  s.authors     = ["TC Juan"]
+  s.email       = ["tcjuan@gmail.com"]
+  s.homepage    = "https://github.com/tcjuan/omniauth-oauth2-line"
+  s.description = %q{OmniAuth strategy for ominauth-oauth2 1.6 for Line}
   s.summary     = s.description
   s.license     = "MIT"
 
