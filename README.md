@@ -6,10 +6,15 @@ Supports the OpenID Connect Web Login. Read the Line developers docs for more de
 
 ## Using This Strategy
 
-First start by adding this gem to your Gemfile:
+First start by clone this respoitory to your local directory:
+
+```
+git clone https://github.com/tcjuan/omniauth-oauth2-line.git 
+```
+Second by adding this gem to your Gemfile:
 
 ```ruby
-gem 'omniauth-line'
+gem 'omniauth-line' ,:path =>"../omniauth-line"
 ```
 
 Next, tell OmniAuth about this provider. For a Rails app, your `config/initializers/omniauth.rb` file should look like this:
@@ -32,6 +37,7 @@ An example auth hash available in `request.env['omniauth.auth']`:
     :name => "yamada tarou",
     :image => "http://dl.profile.line.naver.jp/xxxxx",
     :description => "breakfast now.",
+    :email => "foo@bar.com"
   },
   :credentials => {
     :token => "a1b2c3d4...", # The OAuth 2.0 access token
@@ -45,4 +51,4 @@ An example auth hash available in `request.env['omniauth.auth']`:
 
 ## Supported Rubies
 
-OmniAuth Line is tested under 2.1.x, 2.2.x.
+OmniAuth Line is tested under 2.4.x 
