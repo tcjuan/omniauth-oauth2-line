@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "omniauth-line/version"
+require "omniauth-oauth2-line/version"
 
 Gem::Specification.new do |s|
   s.name        = "omniauth-oauth2-line"
-  s.version     = OmniAuth::Line::VERSION
+  s.version     = OmniAuth::Oauth2Line::VERSION
   s.authors     = ["TC Juan"]
   s.email       = ["tcjuan@gmail.com"]
   s.homepage    = "https://github.com/tcjuan/omniauth-oauth2-line"
